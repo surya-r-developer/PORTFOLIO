@@ -1,8 +1,7 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
-import { PortfolioData } from '@/types/portfolio';
-import { initialPortfolioData } from '@/lib/initial-data';
+import React from 'react';
+import { initialPortfolioData as data } from '@/lib/initial-data';
 import { Navbar } from '@/components/Navbar';
 import { CustomCursor } from '@/components/CustomCursor';
 import { Hero } from '@/components/Hero';
@@ -19,26 +18,6 @@ import { Footer } from '@/components/Footer';
 import { BackToTop } from '@/components/BackToTop';
 
 export default function Home() {
-  const [data, setData] = useState<PortfolioData>(initialPortfolioData);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    async function loadPortfolioData() {
-      try {
-        const res = await fetch('/api/portfolio');
-        if (res.ok) {
-          const json = await res.json();
-          setData(json);
-        }
-      } catch (err) {
-        console.error('Error fetching live portfolio data', err);
-      } finally {
-        setLoading(false);
-      }
-    }
-    loadPortfolioData();
-  }, []);
-
   return (
     <div className="relative min-h-screen bg-slate-50 dark:bg-navy-950 text-slate-900 dark:text-white transition-colors duration-300">
       {/* Custom Futuristic Desktop Cursor */}
