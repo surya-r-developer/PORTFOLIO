@@ -1,0 +1,115 @@
+{
+  "profile": {
+    "name": "Surya R",
+    "primaryTitle": "Aspiring Software Developer | CSE Student",
+    "heroIntro": "Passionate Computer Science & Engineering student focused on constructing clean code, exploring modern full-stack systems, and engineering intuitive digital solutions with high craftsmanship.",
+    "aboutBio": "I am currently pursuing my Bachelor of Engineering in Computer Science & Engineering at Bannari Amman Institute of Technology, Sathyamangalam. Driven by a deep curiosity for computing architectures and software engineering, I dedicate my time to mastering fundamental algorithms, modern web design, and developer tooling. My goal is to build secure, highly responsive applications that deliver genuine utility while continuously refining my problem-solving repertoire.",
+    "college": "Bannari Amman Institute of Technology, Sathyamangalam",
+    "degree": "B.E. Computer Science and Engineering",
+    "expectedGraduation": "2029",
+    "location": "Tamil Nadu, India",
+    "focusArea": "Software Development & Web Engineering",
+    "careerGoal": "To evolve into an impactful Full-Stack Software Developer, building scalable web systems and contributing to open-source software projects.",
+    "interests": [
+      "Full-Stack Web Development",
+      "Data Structures & Algorithms",
+      "System Architecture",
+      "UI/UX Design & Micro-Interactions",
+      "Open Source Exploration"
+    ],
+    "profilePhotoUrl": "/uploads/Surya_R_1786796203145.jpeg",
+    "resumeUrl": ""
+  },
+  "contact": {
+    "email": "suryar.official2007@gmail.com",
+    "phone": "9363670942",
+    "github": "https://github.com/surya-r-developer",
+    "linkedin": "https://www.linkedin.com/in/surya-r-developer",
+    "instagram": "https://instagram.com/suryar.official",
+    "leetcode": "https://leetcode.com/u/surya-r-developer",
+    "locationRepresentation": "Tamil Nadu, India"
+  },
+  "skills": [
+    {
+      "id": "skill-1",
+      "name": "C Programming",
+      "proficiency": 75,
+      "levelText": "Foundational Mastery",
+      "category": "Languages",
+      "icon": "code",
+      "description": "Strong foundation in structured programming, pointers, memory allocation, and algorithmic logic.",
+      "featured": true
+    },
+    {
+      "id": "skill-2",
+      "name": "Python",
+      "proficiency": 78,
+      "levelText": "Intermediate",
+      "category": "Languages",
+      "icon": "terminal",
+      "description": "Scripting, problem solving, data processing, and OOP concepts.",
+      "featured": true
+    },
+    {
+      "id": "skill-3",
+      "name": "HTML5 & Semantic Markup",
+      "proficiency": 85,
+      "levelText": "Proficient",
+      "category": "Web Technologies",
+      "icon": "layout",
+      "description": "Constructing accessible, SEO-friendly, semantic DOM structures.",
+      "featured": true
+    },
+    {
+      "id": "skill-4",
+      "name": "CSS3 & Modern Styling",
+      "proficiency": 82,
+      "levelText": "Proficient",
+      "category": "Web Technologies",
+      "icon": "palette",
+      "description": "Flexbox, Grid, CSS custom properties, responsive layouts, and keyframe animations.",
+      "featured": true
+    },
+    {
+      "id": "skill-5",
+      "name": "Git & GitHub",
+      "proficiency": 80,
+      "levelText": "Proficient",
+      "category": "Tools & Version Control",
+      "icon": "git-branch",
+      "description": "Version control workflow, branch management, collaboration, and pull request practices.",
+      "featured": true
+    },
+    {
+      "id": "skill-6",
+      "name": "UI/UX Design Fundamentals",
+      "proficiency": 72,
+      "levelText": "Foundational",
+      "category": "Design & Principles",
+      "icon": "figma",
+      "description": "User-centered design principles, wireframing, color harmony, and visual hierarchy.",
+      "featured": true
+    }
+  ],
+  "projects": [],
+  "achievements": [],
+  "certifications": [],
+  "education": {
+    "degree": "B.E. Computer Science and Engineering",
+    "college": "Bannari Amman Institute of Technology",
+    "location": "Sathyamangalam, Erode, Tamil Nadu, India",
+    "expectedGraduation": "2029",
+    "highlights": [
+      "Core coursework in Computer Science Foundations, Data Structures, and Programming Fundamentals.",
+      "Active participation in technical workshops and developer community activities.",
+      "Hands-on project development emphasizing clean code principles and modern web standards."
+    ]
+  },
+  "featuredGitHubRepos": [],
+  "siteSettings": {
+    "heroText": "Building the next generation of intuitive software systems.",
+    "footerText": "Designed & Engineered by Surya R.",
+    "showStatusDot": true,
+    "statusText": "Available for collaborative projects & student developer initiatives"
+  }
+}
