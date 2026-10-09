@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Profile, ContactInfo } from '@/types/portfolio';
-import { ArrowDown, Github, Linkedin, Instagram, Mail } from 'lucide-react';
+import { Github, Linkedin, Instagram, Mail } from 'lucide-react';
 
 interface HeroProps {
   profile: Profile;
@@ -126,13 +126,6 @@ export const Hero: React.FC<HeroProps> = ({ profile, contact }) => {
               )}
             </div>
           </div>
-        </div>
-
-        {/* Scroll hint */}
-        <div className="flex justify-center mt-16">
-          <button onClick={() => scrollTo('about')} className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-colors" aria-label="Scroll down">
-            <ArrowDown className="w-5 h-5 animate-bounce" />
-          </button>
         </div>
       </div>
     </section>
