@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Certification } from '@/types/portfolio';
-import { ShieldCheck, ExternalLink, Award } from 'lucide-react';
+import { ShieldCheck, ExternalLink } from 'lucide-react';
 
 interface CertificationsProps {
   certifications: Certification[];
@@ -10,67 +10,59 @@ interface CertificationsProps {
 
 export const Certifications: React.FC<CertificationsProps> = ({ certifications }) => {
   return (
-    <section id="certifications" className="py-20 relative bg-slate-100/50 dark:bg-navy-900/40">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section id="certifications" className="py-16 bg-slate-50 dark:bg-slate-800/40">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-electric-500/10 border border-electric-500/20 text-electric-600 dark:text-cyan-400 font-mono text-xs font-semibold uppercase tracking-wider">
-            <ShieldCheck className="w-3.5 h-3.5" />
-            <span>Verified Credentials</span>
-          </div>
-          <h2 className="text-3xl sm:text-4xl font-display font-bold text-slate-900 dark:text-white tracking-tight">
-            Professional <span className="text-gradient">Certifications</span>
-          </h2>
-          <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-base font-sans">
-            Technical course certificates and verified industry credentials earned by Surya R.
+        <div className="mb-8">
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">Certifications</h2>
+          <p className="text-slate-500 dark:text-slate-400 text-sm">
+            Technical course certificates and verified industry credentials.
           </p>
         </div>
 
         {/* Content or Empty State */}
         {certifications.length === 0 ? (
-          <div className="max-w-xl mx-auto p-10 rounded-2xl bg-white dark:bg-navy-850 border border-slate-200 dark:border-electric-500/20 shadow-md text-center space-y-4">
-            <div className="w-16 h-16 rounded-2xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center mx-auto">
-              <Award className="w-8 h-8 animate-pulse" />
-            </div>
-            <h3 className="font-display font-bold text-xl text-slate-900 dark:text-white">
-              Certifications will appear here as added
+          <div className="p-8 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-center space-y-2 max-w-lg mx-auto">
+            <ShieldCheck className="w-8 h-8 text-blue-500 mx-auto" />
+            <h3 className="font-medium text-slate-900 dark:text-white text-sm">
+              Certifications will appear here
             </h3>
-            <p className="text-slate-600 dark:text-slate-400 text-sm font-sans leading-relaxed">
-              Technical certifications and course verifications are currently being compiled. Add certifications anytime via the admin dashboard.
+            <p className="text-slate-500 dark:text-slate-400 text-xs">
+              Technical certifications and credentials are being added.
             </p>
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {certifications.map((cert) => (
               <div
                 key={cert.id}
-                className="p-6 rounded-2xl bg-white dark:bg-navy-850 border border-slate-200 dark:border-electric-500/20 shadow-sm hover:shadow-lg hover:border-cyan-400/50 transition-all duration-300 flex flex-col justify-between"
+                className="p-5 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex flex-col justify-between"
               >
-                <div className="space-y-3">
-                  <div className="flex items-center justify-between font-mono text-xs text-slate-400">
-                    <span className="font-semibold text-electric-600 dark:text-cyan-400">
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between text-xs text-slate-400">
+                    <span className="font-medium text-blue-600 dark:text-blue-400">
                       {cert.issuingOrganization}
                     </span>
                     <span>{cert.issueDate}</span>
                   </div>
-                  <h3 className="font-display font-bold text-lg text-slate-900 dark:text-white leading-snug">
+                  <h3 className="font-semibold text-slate-900 dark:text-white text-sm">
                     {cert.name}
                   </h3>
-                  <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed font-sans">
+                  <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
                     {cert.description}
                   </p>
                 </div>
 
                 {cert.verificationUrl && (
-                  <div className="pt-4 mt-4 border-t border-slate-100 dark:border-slate-800">
+                  <div className="pt-3 mt-3 border-t border-slate-100 dark:border-slate-700">
                     <a
                       href={cert.verificationUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 font-mono text-xs text-electric-600 dark:text-cyan-300 hover:underline font-semibold"
+                      className="inline-flex items-center gap-1 text-xs text-blue-600 dark:text-blue-400 hover:underline font-medium"
                     >
-                      <span>Verify Credential</span>
-                      <ExternalLink className="w-3.5 h-3.5" />
+                      <span>Verify</span>
+                      <ExternalLink className="w-3 h-3" />
                     </a>
                   </div>
                 )}

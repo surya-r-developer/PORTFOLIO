@@ -8,11 +8,7 @@ export const BackToTop: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 400) {
-        setVisible(true);
-      } else {
-        setVisible(false);
-      }
+      setVisible(window.scrollY > 400);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -28,9 +24,9 @@ export const BackToTop: React.FC = () => {
     <button
       onClick={scrollToTop}
       aria-label="Back to top"
-      className="fixed bottom-6 right-6 z-40 p-3 rounded-2xl bg-gradient-to-r from-electric-600 to-cyan-500 text-white shadow-xl shadow-electric-600/30 hover:scale-110 active:scale-95 transition-all duration-300 group focus:outline-none focus:ring-2 focus:ring-cyan-400"
+      className="fixed bottom-6 right-6 z-40 p-2.5 rounded-lg bg-blue-600 hover:bg-blue-700 text-white shadow-md transition-colors"
     >
-      <ArrowUp className="w-5 h-5 group-hover:-translate-y-0.5 transition-transform" />
+      <ArrowUp className="w-4 h-4" />
     </button>
   );
 };

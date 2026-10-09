@@ -18,7 +18,7 @@ import { BackToTop } from '@/components/BackToTop';
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
+    <div className="relative min-h-screen bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100 font-sans">
       <Navbar />
       <main>
         <Hero profile={data.profile} contact={data.contact} />

@@ -1,29 +1,17 @@
 import type { Metadata } from 'next';
-import { Inter, Outfit, JetBrains_Mono } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import './globals.css';
 
 const inter = Inter({
   subsets: ['latin'],
+  display: 'swap',
   variable: '--font-inter',
-  display: 'swap',
-});
-
-const outfit = Outfit({
-  subsets: ['latin'],
-  variable: '--font-outfit',
-  display: 'swap',
-});
-
-const jetbrainsMono = JetBrains_Mono({
-  subsets: ['latin'],
-  variable: '--font-mono',
-  display: 'swap',
 });
 
 export const metadata: Metadata = {
   title: 'Surya R | Aspiring Software Developer',
   description:
-    'Production portfolio and personal digital identity of Surya R, B.E. Computer Science & Engineering student at Bannari Amman Institute of Technology, Sathyamangalam (Expected 2029). Focused on C, Python, and Web Engineering.',
+    'Portfolio of Surya R, B.E. Computer Science & Engineering student at Bannari Amman Institute of Technology, Sathyamangalam (Expected 2029). Focused on C, Python, and Web Engineering.',
   keywords: [
     'Surya R',
     'Surya R Portfolio',
@@ -60,12 +48,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark scroll-smooth">
+    <html lang="en" className="scroll-smooth">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body
-        className={`${inter.variable} ${outfit.variable} ${jetbrainsMono.variable} antialiased bg-slate-50 dark:bg-navy-950 text-slate-900 dark:text-slate-100 selection:bg-cyan-400 selection:text-navy-950`}
+        className={`${inter.variable} font-sans antialiased bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100 selection:bg-blue-600 selection:text-white`}
       >
         {children}
       </body>
