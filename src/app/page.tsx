@@ -3,7 +3,6 @@
 import React from 'react';
 import { initialPortfolioData as data } from '@/lib/initial-data';
 import { Navbar } from '@/components/Navbar';
-import { CustomCursor } from '@/components/CustomCursor';
 import { Hero } from '@/components/Hero';
 import { About } from '@/components/About';
 import { Skills } from '@/components/Skills';
@@ -19,15 +18,9 @@ import { BackToTop } from '@/components/BackToTop';
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen bg-slate-50 dark:bg-navy-950 text-slate-900 dark:text-white transition-colors duration-300">
-      {/* Custom Futuristic Desktop Cursor */}
-      <CustomCursor />
-
-      {/* Navigation Header */}
+    <div className="relative min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
       <Navbar />
-
-      {/* Main Sections */}
-      <main className="relative z-10 space-y-4">
+      <main>
         <Hero profile={data.profile} contact={data.contact} />
         <About profile={data.profile} />
         <Skills skills={data.skills} />
@@ -39,8 +32,6 @@ export default function Home() {
         <GitHubRepos featuredRepoNames={data.featuredGitHubRepos} />
         <Contact contact={data.contact} />
       </main>
-
-      {/* Footer & Back To Top Floating Action */}
       <Footer contact={data.contact} />
       <BackToTop />
     </div>
