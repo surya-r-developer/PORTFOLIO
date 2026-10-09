@@ -22,7 +22,7 @@ export const initialPortfolioData: PortfolioData = {
       'UI/UX Design & Micro-Interactions',
       'Open Source Exploration',
     ],
-    profilePhotoUrl: '', // Editable placeholder
+    profilePhotoUrl: '/uploads/Surya_R_1786796203145.jpeg',
     resumeUrl: '', // PDF resume editable upload placeholder
   },
   contact: {
