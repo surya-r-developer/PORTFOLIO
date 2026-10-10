@@ -46,7 +46,7 @@ export const Navbar: React.FC = () => {
   };
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 bg-white dark:bg-gray-900 transition-shadow duration-200 ${scrolled ? 'shadow-sm border-b border-gray-200 dark:border-gray-800' : ''}`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-[#070b14]/80 backdrop-blur-md transition-all duration-200 ${scrolled ? 'shadow-sm border-b border-slate-200/80 dark:border-slate-800/80' : 'border-b border-transparent'}`}>
       <div className="max-w-5xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
         {/* Logo */}
         <a href="#home" onClick={(e) => scrollToSection(e, '#home')} className="font-semibold text-gray-900 dark:text-white text-sm tracking-tight">
@@ -89,7 +89,7 @@ export const Navbar: React.FC = () => {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800 px-4 py-3 flex flex-col gap-1">
+        <div className="md:hidden bg-white/95 dark:bg-[#070b14]/95 backdrop-blur-md border-t border-slate-100 dark:border-slate-800/80 px-4 py-3 flex flex-col gap-1">
           {NAV_ITEMS.map((item) => {
             const isActive = activeSection === item.href.substring(1);
             return (
